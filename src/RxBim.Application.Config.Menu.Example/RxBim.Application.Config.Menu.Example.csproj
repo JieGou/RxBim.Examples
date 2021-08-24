@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <LangVersion>8</LangVersion>
+    <PlatformTarget>x64</PlatformTarget>
+    <NoWarn>NU1701</NoWarn>
+    <IsPackable>False</IsPackable>
+  </PropertyGroup>
+  <PropertyGroup>
+    <CodeAnalysisRuleSet>..\..\stylecop.ruleset</CodeAnalysisRuleSet>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="RxBim.Application.Api" Version="1.0.0-dev001" />
+    <PackageReference Include="RxBim.Application.Ui.Revit.Api" Version="1.0.0-dev001" />
+    <PackageReference Include="RxBim.Command.Api" Version="1.0.0-dev001" />
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118" ExcludeAssets="runtime" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="appsettingsRxBim.Application.Config.Menu.Example.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="img\large.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="img\small.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+      <Application__RxBim_Application_Config_Menu_Example_App>ecc6f424-84c8-4ef2-bb88-71c374a553cb</Application__RxBim_Application_Config_Menu_Example_App>
+      <Command__RxBim_Application_Config_Menu_Example_MyCmd>f54c0bba-5498-4ae0-877d-799fd4b1cc02</Command__RxBim_Application_Config_Menu_Example_MyCmd>
+    <PackageGuid>029fa80c-695a-42ed-9974-b02452f8b264</PackageGuid>
+    <UpgradeCode>2cf176b4-5482-44b7-97eb-90714a34e120</UpgradeCode>
+  </PropertyGroup>
+</Project>

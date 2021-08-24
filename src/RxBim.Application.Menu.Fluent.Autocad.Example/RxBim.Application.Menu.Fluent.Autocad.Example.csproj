@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <PlatformTarget>x64</PlatformTarget>
+    <IsPackable>False</IsPackable>
+  </PropertyGroup>
+  <PropertyGroup>
+    <CodeAnalysisRuleSet>..\..\stylecop.ruleset</CodeAnalysisRuleSet>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="RxBim.Application.Autocad.Api" Version="1.0.0-dev002" />
+    <PackageReference Include="RxBim.Application.Ui.About" Version="1.0.0-dev001" />
+    <PackageReference Include="RxBim.Application.Ui.Autocad.Api" Version="1.0.0-dev001" />
+    <PackageReference Include="RxBim.Command.Api" Version="1.0.0-dev001" />
+    <PackageReference Include="RxBim.Command.Autocad.Api" Version="1.0.0-dev002" />
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="img\large.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="img\small.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <PackageGuid>e012b807-8449-4a74-a6b5-52d8f07ea973</PackageGuid>
+    <UpgradeCode>a1f536aa-ff2b-4cec-9358-e716f5583995</UpgradeCode>
+      <Application__RxBim_Application_Menu_Fluent_Autocad_Example_App>9bf6aa74-f904-4e6f-b413-364cadc08eaa</Application__RxBim_Application_Menu_Fluent_Autocad_Example_App>
+      <Command__RxBim_Application_Menu_Fluent_Autocad_Example_Commands_Cmd1>b6ed0bdc-f34f-4cf9-b740-1e3070214869</Command__RxBim_Application_Menu_Fluent_Autocad_Example_Commands_Cmd1>
+      <Command__RxBim_Application_Menu_Fluent_Autocad_Example_Commands_Cmd2>098c0551-5480-4317-baa6-821d499da80f</Command__RxBim_Application_Menu_Fluent_Autocad_Example_Commands_Cmd2>
+      <Command__RxBim_Application_Menu_Fluent_Autocad_Example_Commands_Cmd3>3afbb7d7-cbbb-454f-8e09-7ce7a8f9b805</Command__RxBim_Application_Menu_Fluent_Autocad_Example_Commands_Cmd3>
+      <Command__RxBim_Application_Menu_Fluent_Autocad_Example_Commands_Cmd4>3a702d1c-e93c-4a60-a608-41b4e91c8d87</Command__RxBim_Application_Menu_Fluent_Autocad_Example_Commands_Cmd4>
+      <Command__RxBim_Application_Menu_Fluent_Autocad_Example_Commands_Cmd5>20612638-0563-477e-a7dc-ec29a0470b93</Command__RxBim_Application_Menu_Fluent_Autocad_Example_Commands_Cmd5>
+      <Command__RxBim_Application_Menu_Fluent_Autocad_Example_Commands_Cmd6>6c9a9945-db09-44db-9396-234e733e38da</Command__RxBim_Application_Menu_Fluent_Autocad_Example_Commands_Cmd6>
+      <Command__RxBim_Application_Menu_Fluent_Autocad_Example_Commands_Cmd7>ecc8a541-3b6b-4997-86f2-0846363f73c0</Command__RxBim_Application_Menu_Fluent_Autocad_Example_Commands_Cmd7>
+      <Command__RxBim_Application_Menu_Fluent_Autocad_Example_Commands_Cmd8>fea00f39-9ae9-4ca3-8b0f-11a5be08230c</Command__RxBim_Application_Menu_Fluent_Autocad_Example_Commands_Cmd8>
+  </PropertyGroup>
+</Project>

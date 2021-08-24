@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net472</TargetFramework>
+        <PlatformTarget>x64</PlatformTarget>
+        <NoWarn>NU1701</NoWarn>
+        <IsPackable>False</IsPackable>
+    </PropertyGroup>
+    <PropertyGroup>
+          <Command__RxBim_LoggedCommand_Example_Cmd>915dc84b-1352-42ca-b194-1d91e167f7b0</Command__RxBim_LoggedCommand_Example_Cmd>
+        <PackageGuid>2c08b802-bb1c-49cd-80b3-2091679bfe8f</PackageGuid>
+        <UpgradeCode>dedc4491-59fe-467b-a8f4-6889e6ea199e</UpgradeCode>
+    </PropertyGroup>
+    <ItemGroup>
+      <PackageReference Include="RxBim.Command.Api" Version="1.0.0-dev001" />
+      <PackageReference Include="RxBim.Logs.Revit" Version="1.0.0-dev001" />
+    </ItemGroup>
+    <ItemGroup>
+      <None Update="appsettingsRxBim.LoggedCommand.Example.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+</Project>  
