@@ -1,6 +1,5 @@
 ﻿namespace RxBim.Command.Autocad.Example
 {
-    using Api;
     using Autodesk.AutoCAD.ApplicationServices;
     using Autodesk.AutoCAD.DatabaseServices;
     using Autodesk.AutoCAD.EditorInput;

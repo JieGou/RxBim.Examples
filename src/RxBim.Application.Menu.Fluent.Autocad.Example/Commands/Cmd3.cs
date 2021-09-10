@@ -1,7 +1,7 @@
 ﻿namespace RxBim.Application.Menu.Fluent.Autocad.Example.Commands
 {
     using Autodesk.AutoCAD.ApplicationServices.Core;
-    using Command.Autocad.Api;
+    using Command.Autocad;
     using Shared;
 
     /// <summary>

@@ -7,11 +7,7 @@
     using System.Windows.Input;
     using Abstractions;
     using CSharpFunctionalExtensions;
-    using GalaSoft.MvvmLight.Command;
     using Shared.RevitExtensions.Abstractions;
-    using Shared.Ui.Abstractions;
-    using Shared.Ui.Commands;
-    using Shared.Ui.ViewModels;
 
     /// <summary>
     /// Основная модель представления
@@ -100,16 +96,6 @@
         /// Команда выполнения
         /// </summary>
         public ICommand DoCommand => new RelayAsyncCommand(DoCommandExecute);
-
-        /// <summary>
-        /// Команда загрузки семейства
-        /// </summary>
-        public ICommand LoadFamilyCommand => new RelayAsyncCommand(async () =>
-        {
-            (await _revitTask.Run(_ => _myService.LoadFamily("АР_Стрелка Двойная_Красная")))
-                .Tap(() => _notificationService.ShowMessage(GetType().FullName, "Сеймество загружено"))
-                .OnFailure(err => _notificationService.ShowMessage(GetType().FullName, err, NotificationType.Error));
-        });
 
         private void InitializeCommandExecute()
         {

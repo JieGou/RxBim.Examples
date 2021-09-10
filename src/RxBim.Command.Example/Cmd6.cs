@@ -4,10 +4,9 @@
     using Autodesk.Revit.Attributes;
     using Autodesk.Revit.DB;
     using Autodesk.Revit.DB.Architecture;
-    using Command.Api;
+    using Command.Revit;
     using Shared;
     using Shared.RevitExtensions.Abstractions;
-    using Shared.Ui.Abstractions;
 
     /// <summary>
     /// Тестовая команда проверки работы методов работы со связанными файлами в <see cref="IScopedElementsCollector"/>

@@ -2,9 +2,6 @@
 {
     using System.Windows.Input;
     using Abstractions;
-    using GalaSoft.MvvmLight.Command;
-    using Shared.Ui.Abstractions;
-    using Shared.Ui.ViewModels;
 
     /// <summary>
     /// Основная модель представления

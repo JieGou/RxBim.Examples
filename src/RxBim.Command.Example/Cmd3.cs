@@ -2,11 +2,10 @@
 {
     using System.Collections.Generic;
     using Autodesk.Revit.Attributes;
-    using Command.Api;
+    using Command.Revit;
     using Models;
     using Shared;
     using Shared.Abstractions;
-    using Shared.Ui.Abstractions;
 
     /// <summary>
     /// Тестовая команда проверки работы с сервисом пользовательских настроек

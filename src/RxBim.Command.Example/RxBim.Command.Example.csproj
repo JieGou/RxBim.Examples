@@ -18,11 +18,9 @@
   <ItemGroup>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="RxBim.Command.Api" Version="1.0.0-dev001" />
-    <PackageReference Include="RxBim.Logs.Revit" Version="1.0.0-dev001" />
-    <PackageReference Include="RxBim.Shared.FmHepers" Version="1.0.0-dev001" />
+    <PackageReference Include="RxBim.Command.Revit" Version="1.0.0" />
+    <PackageReference Include="RxBim.Logs.Revit" Version="1.0.0" />
     <PackageReference Include="RxBim.Shared.RevitExtensions" Version="1.0.0-dev001" />
-    <PackageReference Include="RxBim.Shared.Ui" Version="1.0.0-dev001" />
     <PackageReference Include="StyleCop.Analyzers" Version="1.1.118" />
   </ItemGroup>
   <ItemGroup>

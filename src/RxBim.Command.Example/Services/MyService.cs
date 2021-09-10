@@ -6,9 +6,7 @@
     using Abstractions;
     using Autodesk.Revit.DB;
     using CSharpFunctionalExtensions;
-    using Shared.FmHelpers.Abstractions;
     using Shared.RevitExtensions.Abstractions;
-    using Shared.Ui.Abstractions;
 
     /// <inheritdoc/>
     public class MyService : IMyService
@@ -16,7 +14,6 @@
         private readonly INotificationService _notificationService;
         private readonly IElementsCollector _elementsCollector;
         private readonly IProblemElementsStorage _problemElementsStorage;
-        private readonly IFamilyManagerService _familyManagerService;
         private readonly ISheetsCollector _sheetsCollector;
         private readonly Document _doc;
         private readonly RevitTask _revitTask;
@@ -27,7 +24,6 @@
         /// <param name="notificationService">notification</param>
         /// <param name="elementsCollector">collector</param>
         /// <param name="problemElementsStorage">problems elements</param>
-        /// <param name="familyManagerService">Сервис работы с FM</param>
         /// <param name="sheetsCollector"><see cref="ISheetsCollector"/></param>
         /// <param name="doc">doc</param>
         /// <param name="revitTask">revit task</param>
@@ -35,7 +31,6 @@
             INotificationService notificationService,
             IElementsCollector elementsCollector,
             IProblemElementsStorage problemElementsStorage,
-            IFamilyManagerService familyManagerService,
             ISheetsCollector sheetsCollector,
             Document doc,
             RevitTask revitTask)
@@ -43,7 +38,6 @@
             _notificationService = notificationService;
             _elementsCollector = elementsCollector;
             _problemElementsStorage = problemElementsStorage;
-            _familyManagerService = familyManagerService;
             _sheetsCollector = sheetsCollector;
             _doc = doc;
             _revitTask = revitTask;
@@ -80,12 +74,6 @@
             {
                 return Result.Failure(exception.Message);
             }
-        }
-
-        /// <inheritdoc/>
-        public Result LoadFamily(string familyName)
-        {
-            return _familyManagerService.GetTargetFamily(_doc, familyName);
         }
     }
 }

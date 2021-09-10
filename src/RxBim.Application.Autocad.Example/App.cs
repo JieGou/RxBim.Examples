@@ -5,7 +5,6 @@ using RxBim.Application.Autocad.Example;
 
 namespace RxBim.Application.Autocad.Example
 {
-    using Api;
     using Autodesk.AutoCAD.ApplicationServices.Core;
     using Shared;
 

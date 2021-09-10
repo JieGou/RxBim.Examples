@@ -1,6 +1,5 @@
 ﻿namespace RxBim.Command.Autocad.Example
 {
-    using Api;
     using Autodesk.AutoCAD.ApplicationServices.Core;
     using Autodesk.AutoCAD.Runtime;
     using Shared;

@@ -14,9 +14,9 @@
   <ItemGroup>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="RxBim.Application.Api" Version="1.0.0-dev001" />
-    <PackageReference Include="RxBim.Application.Ui.Revit.Api" Version="1.0.0-dev001" />
-    <PackageReference Include="RxBim.Command.Api" Version="1.0.0-dev001" />
+    <PackageReference Include="RxBim.Application.Revit" Version="1.0.0" />
+    <PackageReference Include="RxBim.Application.Ribbon.Revit" Version="1.0.0" />
+    <PackageReference Include="RxBim.Command.Revit" Version="1.0.0" />
     <PackageReference Include="StyleCop.Analyzers" Version="1.1.118" ExcludeAssets="runtime" />
   </ItemGroup>
   <ItemGroup>

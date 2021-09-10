@@ -3,10 +3,9 @@
     using Abstractions;
     using Autodesk.Revit.Attributes;
     using Autodesk.Revit.DB;
-    using Command.Api;
+    using Command.Revit;
     using Shared;
     using Shared.RevitExtensions.Abstractions;
-    using Shared.Ui.Abstractions;
 
     /// <summary>
     /// Тестовая команда проверки работы <see cref="IScopedElementsCollector"/>

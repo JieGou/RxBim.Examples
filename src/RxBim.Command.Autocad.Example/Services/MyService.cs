@@ -2,7 +2,6 @@
 {
     using Abstractions;
     using CSharpFunctionalExtensions;
-    using Shared.Ui.Abstractions;
 
     /// <inheritdoc/>
     public class MyService : IMyService

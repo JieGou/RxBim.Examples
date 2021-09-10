@@ -5,7 +5,7 @@ using RxBim.Application.Menu.Config.Autocad.Example;
 
 namespace RxBim.Application.Menu.Config.Autocad.Example
 {
-    using Application.Autocad.Api;
+    using Application.Autocad;
     using Autodesk.AutoCAD.ApplicationServices.Core;
     using Shared;
 

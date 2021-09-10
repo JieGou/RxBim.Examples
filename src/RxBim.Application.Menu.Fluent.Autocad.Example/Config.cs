@@ -5,9 +5,8 @@
     using System.IO;
     using Commands;
     using Di;
+    using Ribbon.Autocad.Extensions;
     using Shared;
-    using Ui.About;
-    using Ui.Autocad.Api.Extensions;
 
     /// <inheritdoc />
     public class Config : IApplicationConfiguration
@@ -15,8 +14,6 @@
         /// <inheritdoc />
         public void Configure(IContainer container)
         {
-            container.AddAbout();
-
             var assemblyDir = Path.GetDirectoryName(GetType().Assembly.Location) ?? string.Empty;
             container.AddMenu(ribbon =>
                 ribbon.Tab("FxExampleTab")
@@ -25,16 +22,16 @@
                             .SetContent(new AboutBoxContent(
                                 "RxBim4AutoCAD",
                                 "1.1",
-                                $"ПИК-Example - Модуль продукта RxBim для демонстрации и проверки работы API{Environment.NewLine}Разработано для Autodesk Autocad 2019",
+                                $"RxBim-Example - Модуль продукта RxBim для демонстрации и проверки работы API{Environment.NewLine}Разработано для Autodesk Autocad 2019",
                                 GetType().Assembly.GetName().Version,
-                                "ООО ПИК-Технологии",
+                                "ReactiveBIM",
                                 new Dictionary<string, string>
                                 {
                                     {
-                                        "Скачать актуальные версии плагинов",
-                                        "https://drive.google.com/drive/folders/1v-KbQEKv7roJctcWSCodsFQy3KwSz_rt"
+                                        "Скачать актуальные версии примеров",
+                                        "https://github.com/ReactiveBIM/RxBim.Examples"
                                     },
-                                    { "Сайт", "https://pikipedia.pik.ru/wiki/PIK_Tools" },
+                                    { "Сайт", "https://github.com/ReactiveBIM" },
                                     { "Канал в Telegram", "https://t.me/RxBim_News" }
                                 }))
                             .SetLargeImage(

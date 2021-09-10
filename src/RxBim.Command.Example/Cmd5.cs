@@ -4,11 +4,10 @@
     using System.Collections.Generic;
     using Autodesk.Revit.Attributes;
     using Autodesk.Revit.DB;
-    using Command.Api;
+    using Command.Revit;
     using Shared;
     using Shared.RevitExtensions.Abstractions;
     using Shared.RevitExtensions.Models;
-    using Shared.Ui.Abstractions;
 
     /// <summary>
     /// Тестовая команда проверки работы <see cref="ISharedParameterService"/>

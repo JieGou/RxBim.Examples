@@ -1,7 +1,7 @@
 ﻿namespace RxBim.LoggedCommand.Example
 {
     using Autodesk.Revit.Attributes;
-    using RxBim.Command.Api;
+    using Command.Revit;
     using Shared;
 
     [Transaction(TransactionMode.Manual)]

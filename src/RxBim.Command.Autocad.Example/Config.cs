@@ -4,7 +4,6 @@
     using Di;
     using Logs.Autocad;
     using Services;
-    using Shared.Ui;
     using Views;
 
     /// <inheritdoc />
@@ -14,7 +13,6 @@
         public void Configure(IContainer container)
         {
             container.AddTransient<IMyService, MyService>();
-            container.AddUi();
             container.AddTransient<MainWindow>();
             container.AddLogs();
         }

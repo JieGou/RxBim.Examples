@@ -1,7 +1,7 @@
 ﻿namespace RxBim.Application.Menu.Config.Autocad.Example
 {
     using Di;
-    using Ui.Autocad.Api.Extensions;
+    using Ribbon.Autocad.Extensions;
 
     /// <inheritdoc />
     public class Config : IApplicationConfiguration
