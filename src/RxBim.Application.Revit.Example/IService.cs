@@ -1,4 +1,4 @@
-﻿namespace RxBim.Application.Example
+﻿namespace RxBim.Application.Revit.Example
 {
     /// <summary>
     /// IService

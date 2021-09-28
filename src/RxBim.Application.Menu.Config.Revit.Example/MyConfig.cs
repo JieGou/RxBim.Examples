@@ -1,4 +1,4 @@
-﻿namespace RxBim.Application.Config.Menu.Example
+﻿namespace RxBim.Application.Menu.Config.Revit.Example
 {
     using Di;
 

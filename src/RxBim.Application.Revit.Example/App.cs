@@ -1,4 +1,4 @@
-﻿namespace RxBim.Application.Menu.Fluent.Example
+﻿namespace RxBim.Application.Revit.Example
 {
     using Autodesk.Revit.UI;
     using Revit;
@@ -12,9 +12,10 @@
         /// <summary>
         /// start
         /// </summary>
-        public PluginResult Start()
+        /// <param name="service">service</param>
+        public PluginResult Start(IService service)
         {
-            TaskDialog.Show("RxBim.Application.Menu.Fluent.Example", "App started");
+            service.Go();
             return PluginResult.Succeeded;
         }
 
@@ -23,7 +24,7 @@
         /// </summary>
         public PluginResult Shutdown()
         {
-            TaskDialog.Show("RxBim.Application.Menu.Fluent.Example", "App finished");
+            TaskDialog.Show("RxBim.Application.Revit.Example", "App finished");
             return PluginResult.Succeeded;
         }
     }

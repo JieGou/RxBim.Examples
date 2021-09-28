@@ -1,4 +1,4 @@
-﻿namespace RxBim.Application.Example
+﻿namespace RxBim.Application.Revit.Example
 {
     using Autodesk.Revit.UI;
 

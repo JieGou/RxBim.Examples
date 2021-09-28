@@ -1,5 +1,6 @@
-﻿namespace RxBim.Application.Config.Menu.Example
+﻿namespace RxBim.Application.Menu.Fluent.Revit.Example
 {
+    using Application.Revit;
     using Autodesk.Revit.UI;
     using Revit;
     using Shared;
@@ -14,7 +15,7 @@
         /// </summary>
         public PluginResult Start()
         {
-            TaskDialog.Show("RxBim.Application.Menu.Config.Example", "App started");
+            TaskDialog.Show("RxBim.Application.Menu.Fluent.Revit.Example", "App started");
             return PluginResult.Succeeded;
         }
 
@@ -23,7 +24,7 @@
         /// </summary>
         public PluginResult Shutdown()
         {
-            TaskDialog.Show("RxBim.Application.Menu.Config.Example", "App finished");
+            TaskDialog.Show("RxBim.Application.Menu.Fluent.Revit.Example", "App finished");
             return PluginResult.Succeeded;
         }
     }

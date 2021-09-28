@@ -16,21 +16,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5D39467A-B07
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RxBim.Application.Autocad.Example", "src\RxBim.Application.Autocad.Example\RxBim.Application.Autocad.Example.csproj", "{DC3F40B8-6ADB-4860-9E9D-C86DF263B31A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RxBim.Application.Config.Menu.Example", "src\RxBim.Application.Config.Menu.Example\RxBim.Application.Config.Menu.Example.csproj", "{697D3ECE-2E7A-4251-A680-2A90D055D371}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RxBim.Application.Menu.Config.Revit.Example", "src\RxBim.Application.Menu.Config.Revit.Example\RxBim.Application.Menu.Config.Revit.Example.csproj", "{697D3ECE-2E7A-4251-A680-2A90D055D371}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RxBim.Application.Example", "src\RxBim.Application.Example\RxBim.Application.Example.csproj", "{CA7C0964-65D2-45D0-A0B0-E511A0D8E39E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RxBim.Application.Revit.Example", "src\RxBim.Application.Revit.Example\RxBim.Application.Revit.Example.csproj", "{CA7C0964-65D2-45D0-A0B0-E511A0D8E39E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RxBim.Application.Menu.Config.Autocad.Example", "src\RxBim.Application.Menu.Config.Autocad.Example\RxBim.Application.Menu.Config.Autocad.Example.csproj", "{1CCCE8BF-AB4A-4426-8849-C9DE381352BE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RxBim.Application.Menu.Fluent.Autocad.Example", "src\RxBim.Application.Menu.Fluent.Autocad.Example\RxBim.Application.Menu.Fluent.Autocad.Example.csproj", "{98D8FD16-F5D9-4FB2-814E-99A6A8D23636}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RxBim.Application.Menu.Fluent.Example", "src\RxBim.Application.Menu.Fluent.Example\RxBim.Application.Menu.Fluent.Example.csproj", "{A327C6E0-B967-45A3-B77B-C13DF892E2E9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RxBim.Application.Menu.Fluent.Revit.Example", "src\RxBim.Application.Menu.Fluent.Revit.Example\RxBim.Application.Menu.Fluent.Revit.Example.csproj", "{A327C6E0-B967-45A3-B77B-C13DF892E2E9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RxBim.Command.Autocad.Example", "src\RxBim.Command.Autocad.Example\RxBim.Command.Autocad.Example.csproj", "{8E051E45-BDBB-4CF9-88C5-E92F0A9EE20E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RxBim.Command.Example", "src\RxBim.Command.Example\RxBim.Command.Example.csproj", "{25192693-8A6D-4B1A-A33B-FB3B64CB8EF5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RxBim.Command.Revit.Example", "src\RxBim.Command.Revit.Example\RxBim.Command.Revit.Example.csproj", "{25192693-8A6D-4B1A-A33B-FB3B64CB8EF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RxBim.LoggedCommand.Example", "src\RxBim.LoggedCommand.Example\RxBim.LoggedCommand.Example.csproj", "{C9C3BC51-2D82-4BAB-9577-93E41FE98C8B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RxBim.LoggedCommand.Revit.Example", "src\RxBim.LoggedCommand.Revit.Example\RxBim.LoggedCommand.Revit.Example.csproj", "{C9C3BC51-2D82-4BAB-9577-93E41FE98C8B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Autocad", "Autocad", "{C9DE5767-9446-492F-86E6-29C2CD40D677}"
 EndProject

@@ -1,4 +1,4 @@
-﻿namespace RxBim.Application.Menu.Fluent.Example
+﻿namespace RxBim.Application.Menu.Fluent.Revit.Example
 {
     using System;
     using System.Collections.Generic;

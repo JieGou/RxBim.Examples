@@ -1,4 +1,4 @@
-﻿namespace RxBim.LoggedCommand.Example
+﻿namespace RxBim.LoggedCommand.Revit.Example
 {
     using Di;
     using RxBim.Logs.Revit;

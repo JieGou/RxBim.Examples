@@ -1,6 +1,7 @@
-﻿namespace RxBim.Application.Config.Menu.Example
+﻿namespace RxBim.Application.Menu.Fluent.Revit.Example
 {
     using Autodesk.Revit.Attributes;
+    using Autodesk.Revit.DB;
     using Autodesk.Revit.UI;
     using Command.Revit;
     using Shared;
@@ -17,6 +18,12 @@
         {
             TaskDialog.Show(nameof(MyCmd), "Command executed");
             return PluginResult.Succeeded;
+        }
+
+        /// <inheritdoc/>
+        public override bool IsCommandAvailable(UIApplication applicationData, CategorySet selectedCategories)
+        {
+            return true;
         }
     }
 }
