@@ -6,18 +6,6 @@
     /// <inheritdoc/>
     public class MyService : IMyService
     {
-        private readonly INotificationService _notificationService;
-
-        /// <summary>
-        /// ctor
-        /// </summary>
-        /// <param name="notificationService">notification</param>
-        public MyService(
-            INotificationService notificationService)
-        {
-            _notificationService = notificationService;
-        }
-
         /// <inheritdoc/>
         public Result Go()
         {

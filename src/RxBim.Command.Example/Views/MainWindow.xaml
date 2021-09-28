@@ -10,7 +10,6 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:b="http://schemas.microsoft.com/xaml/behaviors"
     xmlns:behaviors="clr-namespace:RxBim.CommandExample.Views.Behaviors"
-    xmlns:btc="https://bimteam.ru/RxBim/xaml/controls"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:ra="https://bimteam.ru/RxBim/revit/abstractions"
@@ -82,12 +81,11 @@
                 Text="Введите значение"
                 VerticalAlignment="Center" />
 
-            <btc:TextBoxWithPlaceholder
+            <TextBox
                 Grid.Column="1"
                 Grid.Row="1"
                 HorizontalAlignment="Left"
                 Margin="5,0"
-                Placeholder="Число от 0 до 10"
                 Text="{Binding IntValue, Mode=TwoWay, StringFormat=N0}"
                 VerticalAlignment="Center" />
         </Grid>

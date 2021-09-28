@@ -2,6 +2,7 @@
 {
     using System.Collections.Generic;
     using Autodesk.Revit.Attributes;
+    using Autodesk.Revit.UI;
     using Command.Revit;
     using Models;
     using Shared;
@@ -18,8 +19,7 @@
         /// Запуск тестовой команды
         /// </summary>
         /// <param name="userSettings">Сервис работы с пользовательскими настройками</param>
-        /// <param name="notificationService">Сервис уведомлений</param>
-        public PluginResult ExecuteCommand(IUserSettings userSettings, INotificationService notificationService)
+        public PluginResult ExecuteCommand(IUserSettings userSettings)
         {
             var mySettings = new MySettings
             {
@@ -29,10 +29,9 @@
             };
 
             userSettings.Set(mySettings);
-            notificationService.ShowMessage(nameof(Cmd3), "Настройки сохранены");
 
             var loaded = userSettings.Get<MySettings>();
-            notificationService.ShowMessage(nameof(Cmd3),
+            TaskDialog.Show(nameof(Cmd3),
                 $"Настройки загружены со значениями: {nameof(loaded.StringValue)}: {loaded.StringValue}; {nameof(loaded.IntValue)} : {loaded.IntValue}; {nameof(loaded.DoubleValue)}: {loaded.DoubleValue}");
 
             var list = new List<string>
@@ -41,10 +40,10 @@
             };
 
             userSettings.Set(list, nodeName: "MyList");
-            notificationService.ShowMessage(nameof(Cmd3), "В настройки сохранена коллекция строк с именем MyList");
+            TaskDialog.Show(nameof(Cmd3), "В настройки сохранена коллекция строк с именем MyList");
 
             var loadedList = userSettings.Get<List<string>>("MyList");
-            notificationService.ShowMessage(nameof(Cmd3),
+            TaskDialog.Show(nameof(Cmd3),
                 $"Из настроек загружена коллекция со значениями: {string.Join(", ", loadedList)}");
 
             return PluginResult.Succeeded;

@@ -6,18 +6,19 @@
     using System.Threading.Tasks;
     using System.Windows.Input;
     using Abstractions;
-    using CSharpFunctionalExtensions;
-    using Shared.RevitExtensions.Abstractions;
+    using Autodesk.Revit.UI;
+    using GalaSoft.MvvmLight;
+    using GalaSoft.MvvmLight.Command;
+    using Helpers;
+    using Tools.Revit.Abstractions;
 
     /// <summary>
     /// Основная модель представления
     /// </summary>
-    public class MainWindowViewModel : MainViewModelBase
+    public class MainWindowViewModel : ViewModelBase
     {
-        private readonly INotificationService _notificationService;
         private readonly IScopedElementsCollector _scopedElementsCollector;
         private readonly IMyService _myService;
-        private readonly RevitTask _revitTask;
 
         private ScopeType _scope = ScopeType.ActiveView;
         private int _intValue;
@@ -27,16 +28,12 @@
 
         /// <inheritdoc/>
         public MainWindowViewModel(
-            INotificationService notificationService,
             IScopedElementsCollector scopedElementsCollector,
             IMyService myService,
             RevitTask revitTask)
-            : base("Тестовый плагин")
         {
-            _notificationService = notificationService;
             _scopedElementsCollector = scopedElementsCollector;
             _myService = myService;
-            _revitTask = revitTask;
 
             InitializeCommand = new RelayCommand(InitializeCommandExecute);
         }
@@ -93,6 +90,11 @@
         }
 
         /// <summary>
+        /// Инициализирует контекст
+        /// </summary>
+        public ICommand InitializeCommand { get; }
+
+        /// <summary>
         /// Команда выполнения
         /// </summary>
         public ICommand DoCommand => new RelayAsyncCommand(DoCommandExecute);
@@ -115,17 +117,17 @@
                 if (IntValue < 0
                     || IntValue > 10)
                 {
-                    _notificationService.ShowMessage("Внимание!", "Введите число от 0 до 10!");
+                    TaskDialog.Show("Внимание!", "Введите число от 0 до 10!");
                     return;
                 }
 
                 var goResult = await _myService.Go();
                 if (goResult.IsFailure)
-                    _notificationService.ShowMessage("Внимание!", goResult.Error);
+                    TaskDialog.Show("Внимание!", goResult.Error);
             }
             catch (Exception exception)
             {
-                _notificationService.ShowMessage("Внимание!", exception.ToString());
+                TaskDialog.Show("Внимание!", exception.ToString());
             }
             finally
             {

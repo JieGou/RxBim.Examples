@@ -1,11 +1,11 @@
 ﻿namespace RxBim.CommandExample
 {
-    using Abstractions;
     using Autodesk.Revit.Attributes;
     using Autodesk.Revit.DB;
+    using Autodesk.Revit.UI;
     using Command.Revit;
     using Shared;
-    using Shared.RevitExtensions.Abstractions;
+    using Tools.Revit.Abstractions;
 
     /// <summary>
     /// Тестовая команда проверки работы <see cref="IScopedElementsCollector"/>
@@ -19,23 +19,19 @@
         /// </summary>
         /// <param name="doc">Revit document</param>
         /// <param name="scopedElementsCollector">Сервис коллектора части элементов</param>
-        /// <param name="notificationService">Сервис уведомлений</param>
-        /// <param name="myService">Сервис</param>
         public PluginResult ExecuteCommand(
             Document doc,
-            IScopedElementsCollector scopedElementsCollector,
-            INotificationService notificationService,
-            IMyService myService)
+            IScopedElementsCollector scopedElementsCollector)
         {
             scopedElementsCollector.SetScope(ScopeType.ActiveView);
-            notificationService.ShowMessage(nameof(Cmd4), "Установили Scope в ActiveView");
+            TaskDialog.Show(nameof(Cmd4), "Установили Scope в ActiveView");
 
             scopedElementsCollector.GetFilteredElementCollector(doc);
-            notificationService.ShowMessage(nameof(Cmd4),
+            TaskDialog.Show(nameof(Cmd4),
                 "Использовали метод GetFilteredElementCollector. Выделение должно сброситься");
 
             scopedElementsCollector.SetBackSelectedElements();
-            notificationService.ShowMessage(nameof(Cmd4),
+            TaskDialog.Show(nameof(Cmd4),
                 "Вызвали метод SetBackSelectedElements. Выделение должно вернуться");
 
             return PluginResult.Succeeded;

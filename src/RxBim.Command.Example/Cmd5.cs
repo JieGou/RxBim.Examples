@@ -4,10 +4,11 @@
     using System.Collections.Generic;
     using Autodesk.Revit.Attributes;
     using Autodesk.Revit.DB;
+    using Autodesk.Revit.UI;
     using Command.Revit;
     using Shared;
-    using Shared.RevitExtensions.Abstractions;
-    using Shared.RevitExtensions.Models;
+    using Tools.Revit.Abstractions;
+    using Tools.Revit.Models;
 
     /// <summary>
     /// Тестовая команда проверки работы <see cref="ISharedParameterService"/>
@@ -19,12 +20,8 @@
         /// <summary>
         /// Запуск тестовой команды
         /// </summary>
-        /// <param name="doc">Revit document</param>
-        /// <param name="notificationService">Сервис уведомлений</param>
         /// <param name="sharedParameterService">Сервис по работе с общими параметрами</param>
         public PluginResult ExecuteCommand(
-            Document doc,
-            INotificationService notificationService,
             ISharedParameterService sharedParameterService)
         {
             //// Тестовая команда создана для тестирования на ФОП ПИК:
@@ -56,27 +53,27 @@
             var definitionFileResult = sharedParameterService.GetDefinitionFile();
             if (definitionFileResult.IsFailure)
             {
-                notificationService.ShowMessage(title, definitionFileResult.Error);
+                TaskDialog.Show(title, definitionFileResult.Error);
                 return PluginResult.Failed;
             }
 
             var definitionFile = definitionFileResult.Value;
 
-            notificationService.ShowMessage(
+            TaskDialog.Show(
                 title,
                 $"Проверка параметра BDS_Mark в ФОП только по имени: {sharedParameterService.ParameterExistsInDefinitionFile(definitionFile, sharedParameterInfo, false)}");
 
-            notificationService.ShowMessage(
+            TaskDialog.Show(
                 title,
                 $"Проверка параметра BDS_Mark в ФОП по всем данным: {sharedParameterService.ParameterExistsInDefinitionFile(definitionFile, sharedParameterInfo, true)}");
 
-            notificationService.ShowMessage(title, "Создаем параметр BDS_Mark для стен. Проверяем по всем данным");
+            TaskDialog.Show(title, "Создаем параметр BDS_Mark для стен. Проверяем по всем данным");
 
             sharedParameterService.AddSharedParameter(definitionFile, sharedParameterInfo, true);
 
             sharedParameterInfo.Definition.Guid = Guid.NewGuid();
 
-            notificationService.ShowMessage(
+            TaskDialog.Show(
                 title,
                 $"Проверка параметра BDS_Mark в ФОП по всем данным с неверным GUID: {sharedParameterService.ParameterExistsInDefinitionFile(definitionFile, sharedParameterInfo, true)}");
 

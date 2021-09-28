@@ -5,13 +5,13 @@
     using System.Threading.Tasks;
     using Abstractions;
     using Autodesk.Revit.DB;
-    using CSharpFunctionalExtensions;
-    using Shared.RevitExtensions.Abstractions;
+    using Autodesk.Revit.UI;
+    using Tools.Revit.Abstractions;
+    using Result = CSharpFunctionalExtensions.Result;
 
     /// <inheritdoc/>
     public class MyService : IMyService
     {
-        private readonly INotificationService _notificationService;
         private readonly IElementsCollector _elementsCollector;
         private readonly IProblemElementsStorage _problemElementsStorage;
         private readonly ISheetsCollector _sheetsCollector;
@@ -21,21 +21,18 @@
         /// <summary>
         /// ctor
         /// </summary>
-        /// <param name="notificationService">notification</param>
         /// <param name="elementsCollector">collector</param>
         /// <param name="problemElementsStorage">problems elements</param>
         /// <param name="sheetsCollector"><see cref="ISheetsCollector"/></param>
         /// <param name="doc">doc</param>
         /// <param name="revitTask">revit task</param>
         public MyService(
-            INotificationService notificationService,
             IElementsCollector elementsCollector,
             IProblemElementsStorage problemElementsStorage,
             ISheetsCollector sheetsCollector,
             Document doc,
             RevitTask revitTask)
         {
-            _notificationService = notificationService;
             _elementsCollector = elementsCollector;
             _problemElementsStorage = problemElementsStorage;
             _sheetsCollector = sheetsCollector;
@@ -66,8 +63,7 @@
                         _problemElementsStorage.AddProblemElement(problemElem.Id.IntegerValue, "problem description");
                 });
 
-                _notificationService.ShowMessage(GetType().FullName, _doc.Title + $" slnsajnsdanlk");
-
+                TaskDialog.Show(GetType().FullName, _doc.Title);
                 return Result.Success();
             }
             catch (Exception exception)

@@ -2,22 +2,21 @@
 {
     using System.Windows.Input;
     using Abstractions;
+    using GalaSoft.MvvmLight;
+    using GalaSoft.MvvmLight.Command;
+    using Application = Autodesk.AutoCAD.ApplicationServices.Core.Application;
 
     /// <summary>
     /// Основная модель представления
     /// </summary>
-    public class MainWindowViewModel : MainViewModelBase
+    public class MainWindowViewModel : ViewModelBase
     {
-        private readonly INotificationService _notificationService;
         private readonly IMyService _myService;
 
         /// <inheritdoc/>
         public MainWindowViewModel(
-            INotificationService notificationService,
             IMyService myService)
-            : base("Тестовый плагин")
         {
-            _notificationService = notificationService;
             _myService = myService;
         }
 
@@ -29,7 +28,7 @@
         private void DoCommandExecute()
         {
             _myService.Go();
-            _notificationService.ShowMessage("Заголовок", "Готово");
+            Application.ShowAlertDialog("Готово");
         }
     }
 }
