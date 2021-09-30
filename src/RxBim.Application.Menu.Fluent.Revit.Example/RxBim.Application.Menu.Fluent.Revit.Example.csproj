@@ -40,7 +40,7 @@
   </PropertyGroup>
   <PropertyGroup>
     <!--<AddAllAppToManifest>True</AddAllAppToManifest>-->
-    <ProjectsAddingToManifest>RxBim.Application.Example</ProjectsAddingToManifest>
+    <ProjectsAddingToManifest>RxBim.Application.Revit.Example</ProjectsAddingToManifest>
   </PropertyGroup>
   <PropertyGroup>
     <PackageGuid>d452aebe-13b8-4550-9ad6-5e3ff47d7c8a</PackageGuid>
