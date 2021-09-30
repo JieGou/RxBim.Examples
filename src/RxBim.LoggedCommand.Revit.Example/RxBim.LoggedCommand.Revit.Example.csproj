@@ -1,23 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-    <PropertyGroup>
-        <TargetFramework>net472</TargetFramework>
-        <PlatformTarget>x64</PlatformTarget>
-        <NoWarn>NU1701</NoWarn>
-        <IsPackable>False</IsPackable>
-    </PropertyGroup>
-    <PropertyGroup>
-          <Command__RxBim_LoggedCommand_Example_Cmd>915dc84b-1352-42ca-b194-1d91e167f7b0</Command__RxBim_LoggedCommand_Example_Cmd>
-        <PackageGuid>2c08b802-bb1c-49cd-80b3-2091679bfe8f</PackageGuid>
-        <UpgradeCode>dedc4491-59fe-467b-a8f4-6889e6ea199e</UpgradeCode>
-    </PropertyGroup>
-    <ItemGroup>
-      <PackageReference Include="RxBim.Command.Revit" Version="1.0.2" />
-      <PackageReference Include="RxBim.Logs.Revit" Version="1.0.2" />
-    </ItemGroup>
-    <ItemGroup>
-      <None Update="appsettingsRxBim.LoggedCommand.Example.json">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
-    </ItemGroup>
-</Project>  
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <PlatformTarget>x64</PlatformTarget>
+    <NoWarn>NU1701</NoWarn>
+    <IsPackable>False</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="RxBim.Command.Revit" Version="1.0.2" />
+    <PackageReference Include="RxBim.Logs.Revit" Version="1.0.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="appsettings.RxBim.LoggedCommand.Example.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <PackageGuid>d8ae78e8-2361-425c-8f5c-f6b05b05cd9a</PackageGuid>
+    <UpgradeCode>453a5054-fcee-413c-adff-b2615147cf11</UpgradeCode>
+    <Command__RxBim_LoggedCommand_Revit_Example_Cmd>f808a403-ca1f-4b42-8ee1-bcf45fd5f0f1</Command__RxBim_LoggedCommand_Revit_Example_Cmd>
+  </PropertyGroup>
+</Project>

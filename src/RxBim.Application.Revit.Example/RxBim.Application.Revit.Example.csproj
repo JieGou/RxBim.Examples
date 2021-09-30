@@ -11,8 +11,7 @@
     <CodeAnalysisRuleSet>..\..\stylecop.ruleset</CodeAnalysisRuleSet>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
-  <ItemGroup>
-  </ItemGroup>
+  <ItemGroup></ItemGroup>
   <ItemGroup>
     <PackageReference Include="RxBim.Application.Revit" Version="1.0.2" />
     <PackageReference Include="RxBim.Logs.Revit" Version="1.0.2" />
@@ -32,6 +31,6 @@
     <UpgradeCode>15ad8274-6ba0-4155-8090-902b1709c8c1</UpgradeCode>
   </PropertyGroup>
   <PropertyGroup>
-      <Application__RxBim_Application_Example_App>5e2f7ab0-c9d5-4cdc-a569-3752ef79cd12</Application__RxBim_Application_Example_App>
+    <Application__RxBim_Application_Revit_Example_App>a6749952-650a-41e5-be4c-73646b8497d5</Application__RxBim_Application_Revit_Example_App>
   </PropertyGroup>
 </Project>

@@ -11,8 +11,7 @@
     <CodeAnalysisRuleSet>..\..\stylecop.ruleset</CodeAnalysisRuleSet>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
-  <ItemGroup>
-  </ItemGroup>
+  <ItemGroup></ItemGroup>
   <ItemGroup>
     <PackageReference Include="RxBim.Application.Revit" Version="1.0.2" />
     <PackageReference Include="RxBim.Application.Ribbon.Revit" Version="1.0.2" />
@@ -31,9 +30,9 @@
     </None>
   </ItemGroup>
   <PropertyGroup>
-      <Application__RxBim_Application_Config_Menu_Example_App>ecc6f424-84c8-4ef2-bb88-71c374a553cb</Application__RxBim_Application_Config_Menu_Example_App>
-      <Command__RxBim_Application_Config_Menu_Example_MyCmd>f54c0bba-5498-4ae0-877d-799fd4b1cc02</Command__RxBim_Application_Config_Menu_Example_MyCmd>
-    <PackageGuid>029fa80c-695a-42ed-9974-b02452f8b264</PackageGuid>
-    <UpgradeCode>2cf176b4-5482-44b7-97eb-90714a34e120</UpgradeCode>
+    <PackageGuid>ea6e2830-9a99-4f41-8a0b-d0fb3903a97a</PackageGuid>
+    <UpgradeCode>53aa8346-f79f-4e9a-9fe0-48c44eeae1c4</UpgradeCode>
+    <Application__RxBim_Application_Menu_Config_Revit_Example_App>c5da9bcf-6d6d-477c-a315-4a4cb57c7db7</Application__RxBim_Application_Menu_Config_Revit_Example_App>
+    <Command__RxBim_Application_Menu_Config_Revit_Example_MyCmd>bda94b43-1d7b-4897-8805-4b49dc617b9c</Command__RxBim_Application_Menu_Config_Revit_Example_MyCmd>
   </PropertyGroup>
 </Project>

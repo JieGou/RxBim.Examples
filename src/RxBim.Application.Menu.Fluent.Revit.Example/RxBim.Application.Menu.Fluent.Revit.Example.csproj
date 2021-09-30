@@ -30,7 +30,7 @@
   </ItemGroup>
   <PropertyGroup>
     <Version>1.0.0</Version>
-	<ProductVersion>2021</ProductVersion>
+    <ProductVersion>2021</ProductVersion>
     <Company>pik-group.com</Company>
     <Authors>BimLab BimTeam</Authors>
     <Product>BimLabRxBim</Product>
@@ -39,11 +39,13 @@
     <PackageTags>BIM BimLab</PackageTags>
   </PropertyGroup>
   <PropertyGroup>
-      <Application__RxBim_Application_Menu_Fluent_Example_App>d78e14a4-f2c3-4e16-89a6-515d00ae9c35</Application__RxBim_Application_Menu_Fluent_Example_App>
-      <Command__RxBim_Application_Menu_Fluent_Example_MyCmd>7efdee50-554a-48e0-b1b9-9992223d0966</Command__RxBim_Application_Menu_Fluent_Example_MyCmd>
-    <PackageGuid>32c5fd61-9b6d-4354-aebd-03816d95ca3c</PackageGuid>
-    <UpgradeCode>6c0d17c4-aa84-4dbc-8557-c9bed22363e3</UpgradeCode>
-	<!--<AddAllAppToManifest>True</AddAllAppToManifest>-->
- 	<ProjectsAddingToManifest>RxBim.Application.Example</ProjectsAddingToManifest>
+    <!--<AddAllAppToManifest>True</AddAllAppToManifest>-->
+    <ProjectsAddingToManifest>RxBim.Application.Example</ProjectsAddingToManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PackageGuid>d452aebe-13b8-4550-9ad6-5e3ff47d7c8a</PackageGuid>
+    <UpgradeCode>d37dde3b-66f6-4b5a-a282-0de80439f465</UpgradeCode>
+    <Application__RxBim_Application_Menu_Fluent_Revit_Example_App>d28af54f-4500-4668-a8bc-3bd1cfb43e84</Application__RxBim_Application_Menu_Fluent_Revit_Example_App>
+    <Command__RxBim_Application_Menu_Fluent_Revit_Example_MyCmd>6c7a9501-991b-4b61-8b8d-ecbc007a37a3</Command__RxBim_Application_Menu_Fluent_Revit_Example_MyCmd>
   </PropertyGroup>
 </Project>

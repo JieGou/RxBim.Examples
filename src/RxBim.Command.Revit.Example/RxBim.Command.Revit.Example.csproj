@@ -5,7 +5,7 @@
     <LangVersion>9</LangVersion>
     <PlatformTarget>x64</PlatformTarget>
     <NoWarn>NU1701</NoWarn>
-     <RootNamespace>RxBim.CommandExample</RootNamespace>
+    <RootNamespace>RxBim.CommandExample</RootNamespace>
     <PreserveCompilationContext>true</PreserveCompilationContext>
     <UseWpf>true</UseWpf>
     <IsPackable>False</IsPackable>
@@ -24,22 +24,17 @@
     <PackageReference Include="StyleCop.Analyzers" Version="1.1.118" />
   </ItemGroup>
   <ItemGroup>
-    <None Update="appsettingsRxBim.Command.Example.json">
+    <None Update="appsettings.RxBim.Command.Example.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
   <PropertyGroup>
-      <Command__RxBim_CommandExample_Cmd>a1a8803e-ecc4-4645-be99-c0f288fd043c</Command__RxBim_CommandExample_Cmd>
-      <Command__RxBim_CommandExample_Cmd2>f85424a7-af75-4c03-8e8b-be017d028dc5</Command__RxBim_CommandExample_Cmd2>
-      <Command__RxBim_CommandExample_Cmd3>6714e3e0-6d5f-40b7-ae52-d1443c685387</Command__RxBim_CommandExample_Cmd3>
-    <PackageGuid>80df5344-56d8-4800-93ae-2ec7bc2141d8</PackageGuid>
-    <UpgradeCode>41987f37-8e8d-4cd4-a99c-d71c5cc38935</UpgradeCode>
-  </PropertyGroup>
-  <PropertyGroup>
-      <Command__RxBim_CommandExample_Cmd4>6dba98a8-23e6-46f4-8280-de37c29e97f8</Command__RxBim_CommandExample_Cmd4>
-  </PropertyGroup>
-  <PropertyGroup>
-      <Command__RxBim_CommandExample_Cmd5>20ec43be-87c1-49b0-b0af-c5b012b26d2b</Command__RxBim_CommandExample_Cmd5>
-      <Command__RxBim_CommandExample_Cmd6>bca56ef3-86fa-4469-86c2-21aff2ddcfce</Command__RxBim_CommandExample_Cmd6>
+    <PackageGuid>62b3c828-38e7-4ed7-82e0-81088e605df1</PackageGuid>
+    <UpgradeCode>04433c89-b758-4619-8e83-8b7736602ca8</UpgradeCode>
+    <Command__RxBim_CommandExample_Cmd>6cc8ae7d-1e31-4c59-8cd3-dc4cb8da6ed1</Command__RxBim_CommandExample_Cmd>
+    <Command__RxBim_CommandExample_Cmd3>ebb12282-3222-4bd6-9fa6-6a37fd74c93b</Command__RxBim_CommandExample_Cmd3>
+    <Command__RxBim_CommandExample_Cmd4>aba03147-9eca-48ce-a6a5-ea01f48dfac6</Command__RxBim_CommandExample_Cmd4>
+    <Command__RxBim_CommandExample_Cmd5>192bdeb8-7b40-4cf9-9ca5-34b9af005822</Command__RxBim_CommandExample_Cmd5>
+    <Command__RxBim_CommandExample_Cmd6>e6f44206-4e3b-4228-8ae4-6f7e303f56c4</Command__RxBim_CommandExample_Cmd6>
   </PropertyGroup>
 </Project>
