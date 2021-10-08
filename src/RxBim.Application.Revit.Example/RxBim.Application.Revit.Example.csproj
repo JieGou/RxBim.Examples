@@ -13,9 +13,9 @@
   </PropertyGroup>
   <ItemGroup></ItemGroup>
   <ItemGroup>
-    <PackageReference Include="RxBim.Application.Revit" Version="1.0.3-rc2" />
-    <PackageReference Include="RxBim.Di.SimpleInjector" Version="1.0.0-rc1" />
-    <PackageReference Include="RxBim.Logs.Revit" Version="1.0.3-rc1" />
+    <PackageReference Include="RxBim.Application.Revit" Version="1.0.3" />
+    <PackageReference Include="RxBim.Di.SimpleInjector" Version="1.0.0" />
+    <PackageReference Include="RxBim.Logs.Revit" Version="1.0.3" />
     <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>

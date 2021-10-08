@@ -10,10 +10,10 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="RxBim.Application.Autocad" Version="1.0.3-rc2" />
-    <PackageReference Include="RxBim.Application.Ribbon.Autocad" Version="1.0.4-rc1" />
-    <PackageReference Include="RxBim.Command.Autocad" Version="1.0.3-rc1" />
-    <PackageReference Include="RxBim.Di.SimpleInjector" Version="1.0.0-rc1" />
+    <PackageReference Include="RxBim.Application.Autocad" Version="1.0.3" />
+    <PackageReference Include="RxBim.Application.Ribbon.Autocad" Version="1.0.4" />
+    <PackageReference Include="RxBim.Command.Autocad" Version="1.0.3" />
+    <PackageReference Include="RxBim.Di.SimpleInjector" Version="1.0.0" />
     <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>

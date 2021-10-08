@@ -7,9 +7,9 @@
     <IsPackable>False</IsPackable>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="RxBim.Command.Revit" Version="1.0.3-rc2" />
-    <PackageReference Include="RxBim.Di.SimpleInjector" Version="1.0.0-rc1" />
-    <PackageReference Include="RxBim.Logs.Revit" Version="1.0.3-rc1" />
+    <PackageReference Include="RxBim.Command.Revit" Version="1.0.3" />
+    <PackageReference Include="RxBim.Di.SimpleInjector" Version="1.0.0" />
+    <PackageReference Include="RxBim.Logs.Revit" Version="1.0.3" />
   </ItemGroup>
   <ItemGroup>
     <None Update="appsettings.RxBim.LoggedCommand.Example.json">

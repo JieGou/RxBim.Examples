@@ -19,9 +19,9 @@
     <ItemGroup>
         <PackageReference Include="MvvmLight" Version="5.4.1.1" />
         <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.19" />
-        <PackageReference Include="RxBim.Command.Autocad" Version="1.0.3-rc1" />
-        <PackageReference Include="RxBim.Di.SimpleInjector" Version="1.0.0-rc1" />
-        <PackageReference Include="RxBim.Logs.Autocad" Version="1.0.3-rc2" />
+        <PackageReference Include="RxBim.Command.Autocad" Version="1.0.3" />
+        <PackageReference Include="RxBim.Di.SimpleInjector" Version="1.0.0" />
+        <PackageReference Include="RxBim.Logs.Autocad" Version="1.0.3" />
         <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
